@@ -8,6 +8,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  background: #fff;
   color: #333;
 }
 
@@ -16,89 +17,97 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%;
-  background: #444;
+  padding: 15px 30px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
 
-header .logo img {
+.logo img {
   height: 50px;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav ul li {
-  margin-left: 20px;
-}
-
-nav ul li a {
+.main-nav a {
+  margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.main-nav a:hover {
+  color: #f68026;
+}
+
+.search-box input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+
+/* Sub menu */
+.sub-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f68026;
+  padding: 10px 30px;
+}
+
+.sub-menu .links a {
+  margin-right: 15px;
   color: #fff;
   font-weight: bold;
+  text-decoration: none;
+}
+
+.sub-menu .links a:hover {
+  text-decoration: underline;
+}
+
+.sub-menu .socials img {
+  height: 24px;
+  margin-left: 10px;
 }
 
 /* Banner */
-.banner {
-  position: relative;
-  text-align: center;
-}
-
 .banner img {
   width: 100%;
-  height: 400px;
-  object-fit: cover;
+  display: block;
 }
 
-.banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background: rgba(0,0,0,0.5);
-  padding: 20px;
+/* Content */
+.content-section {
+  padding: 30px;
 }
 
-/* About */
-.about {
-  text-align: center;
-  padding: 50px 10%;
+.content-section h2 {
+  margin-bottom: 20px;
+  color: #f68026;
 }
 
-.about img {
-  margin-top: 20px;
-  width: 60%;
-  border-radius: 10px;
-}
-
-/* Services */
-.services {
-  background: #f4f4f4;
-  padding: 50px 10%;
-}
-
-.service-list {
+.posts {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  gap: 20px;
 }
 
-.service {
+.posts article {
+  flex: 1;
   text-align: center;
-  width: 30%;
 }
 
-.service img {
+.posts img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
+}
+
+.posts h3 {
+  margin-top: 10px;
+  font-size: 16px;
 }
 
 /* Footer */
 footer {
-  background: #444;
+  background: #333;
   color: #fff;
   text-align: center;
-  padding: 15px 0;
+  padding: 15px;
+  margin-top: 30px;
 }
