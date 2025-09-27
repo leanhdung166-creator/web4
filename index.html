@@ -3,61 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web4 - Mẫu thiết kế</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f5f5f5;
-      color: #333;
-      text-align: center;
-    }
-    header {
-      background: #4CAF50;
-      color: white;
-      padding: 20px;
-    }
-    section, main {
-      padding: 20px;
-    }
-    img {
-      max-width: 90%;
-      height: auto;
-      border: 2px solid #ddd;
-      border-radius: 8px;
-      margin-top: 10px;
-    }
-    footer {
-      background: #333;
-      color: white;
-      padding: 10px;
-      margin-top: 20px;
-    }
-  </style>
+  <title>Web4 - Mẫu Thiết Kế</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
   <!-- Header -->
   <header>
-    <h1>Chào mừng đến với Website Web4</h1>
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav class="main-nav">
+      <a href="#news">TIN TỨC</a>
+      <a href="#review">ĐÁNH GIÁ</a>
+      <a href="#community">CỘNG ĐỒNG</a>
+      <a href="#cosplay">COSPLAY</a>
+      <a href="#giftcode">GIFT CODE</a>
+      <a href="#movies">PHIM ẢNH</a>
+    </nav>
+    <div class="search-box">
+      <input type="text" placeholder="Tìm kiếm...">
+    </div>
   </header>
 
-  <!-- Hình ảnh mẫu -->
-  <section>
-    <h2>Hình minh họa</h2>
-    <img src="images/MauThietKe.png" alt="Mẫu thiết kế">
+  <!-- Sub Menu -->
+  <div class="sub-menu">
+    <div class="links">
+      <a href="#game-online">GAME ONLINE</a>
+      <a href="#pc-console">PC/CONSOLE</a>
+      <a href="#game-mobile">GAME MOBILE</a>
+      <a href="#esports">ESPORTS</a>
+      <a href="#tech">CÔNG NGHỆ</a>
+    </div>
+    <div class="socials">
+      <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="images/youtube.png" alt="YouTube"></a>
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <section class="banner">
+    <img src="images/banner.png" alt="Banner">
   </section>
 
   <!-- Nội dung -->
   <main>
-    <h2>Giới thiệu</h2>
-    <p>Đây là website được xây dựng dựa trên bài thực hành 04. 
-    Hình ảnh và nội dung đã được chỉnh để hiển thị đúng trên GitHub Pages.</p>
+    <section id="news" class="content-section">
+      <h2>Tin tức</h2>
+      <div class="posts">
+        <article>
+          <img src="images/post1.jpg" alt="Bài viết 1">
+          <h3>Tiêu đề bài viết 1</h3>
+        </article>
+        <article>
+          <img src="images/post2.jpg" alt="Bài viết 2">
+          <h3>Tiêu đề bài viết 2</h3>
+        </article>
+        <article>
+          <img src="images/post3.jpg" alt="Bài viết 3">
+          <h3>Tiêu đề bài viết 3</h3>
+        </article>
+      </div>
+    </section>
+
+    <section id="review" class="content-section">
+      <h2>Đánh giá</h2>
+      <div class="posts">
+        <article>
+          <img src="images/post4.jpg" alt="Bài viết 4">
+          <h3>Tiêu đề bài viết 4</h3>
+        </article>
+        <article>
+          <img src="images/post5.jpg" alt="Bài viết 5">
+          <h3>Tiêu đề bài viết 5</h3>
+        </article>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 - Web4 Demo</p>
+    <p>© 2025 Web4. All rights reserved.</p>
   </footer>
 </body>
 </html>
